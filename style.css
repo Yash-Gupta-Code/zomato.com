@@ -1,0 +1,467 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    background-color: #f8f8f8;
+    color: #333;
+    position: relative;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: #ff6347;
+    color: white;
+}
+
+header .logo img {
+    height: 30px;
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+    max-width: fit-content;
+}
+
+header ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 10px 15px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+header ul li a:hover {
+    background-color: white;
+    color: #ff6347;
+    border-radius: 5px;
+}
+
+main {
+    text-align: center;
+}
+
+main section:first-of-type {
+    padding: 100px 20px;
+    background: url('photos/back.png') no-repeat center;
+    background-size: cover;
+    color: white;
+    height: calc(100vh - 80px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main section:first-of-type img {
+    width: 100px;
+    margin-bottom: 20px;
+    animation: logo-bounce 2s infinite;
+}
+
+main section:first-of-type p {
+    font-size: 2rem;
+    margin: 20px 0;
+}
+
+main section:first-of-type input {
+    padding: 10px;
+    width: 300px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    text-align: center;
+}
+
+main section:first-of-type input:focus {
+    outline: none;
+    box-shadow: 0 0 15px rgba(255, 99, 71, 0.8);
+}
+
+main section.about-delivery {
+    padding: 60px;
+    background: linear-gradient(135deg, #ffe6e6 30%, #ff6347 100%);
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    color: #333;
+    max-width: 900px;
+    margin: 50px auto;
+    text-align: left;
+}
+
+main section.about-delivery h2 {
+    color: #ff6347;
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+main section.about-delivery ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+main section.about-delivery ul li {
+    padding: 10px 0;
+    font-size: 1.2rem;
+    position: relative;
+    padding-left: 30px;
+}
+
+main section.about-delivery ul li::before {
+    content: '\2713';
+    position: absolute;
+    left: 0;
+    top: 10px;
+    color: #ff6347;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+footer {
+    width: 1100px;
+    color: rgb(95, 95, 95);
+    text-align: center;
+    padding: 15px;
+    font-size: 1rem;
+    margin-left: 195px;
+    border-top: 0.1px;
+    border-style: solid;
+    border-color: black;
+    border-bottom: none;
+    border-right: none;
+    border-left: none;
+    max-width: fit-content;
+}
+
+/* Animations */
+@keyframes logo-bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+.radio{
+    display: flex;
+    row-gap: 50px;
+    margin: 13px;
+    margin-left: 10px;
+    font-size: medium;
+    font-weight: lighter;
+    opacity: 0.9;
+    margin-top: 30px;
+}
+
+#middle{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.photo{
+    width: 410px;
+    height: 450px;
+}
+
+.buttons{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 12px;
+    margin-top: 15px;
+}
+
+.button1{
+    width: 140px;
+    height: 40px;
+    margin-right: 10px;
+    background-image: url(photos/button1.webp);
+    background-size: cover;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.button2{
+    width: 140px;
+    height: 40px;
+    margin-right: 10px;
+    background-image: url(photos/buton2.webp);
+    background-size: cover;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+h2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+    font-size: 45px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    color: black;
+    min-width: fit-content;
+}
+
+    
+
+.half{
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 30px;
+    max-width: fit-content;
+}
+
+#op{
+    height: 50px;
+    width: 292px;
+    font-size: larger;
+    padding-left: 10px;
+    border-radius: 5px;
+    border-width: 0.1px;
+    margin: 13px;
+}
+
+#x{
+    padding-right: 10px;
+}
+
+.side{
+    height: 50px;
+    width: 160px;
+    font-size: larger;
+    border-radius: 5px;
+    border-width: 0.1px;
+    margin: 13px;
+    margin-left: -8px;
+    background-color: rgba(236, 59, 59, 0.829);
+    color: white;
+    cursor: pointer;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+p{
+    color: gray;
+    font-weight: 1px;
+    margin-top: 5px;
+    margin-left: 10px;
+}
+
+pre{
+    margin-left: 10px;
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(101, 98, 98);
+}
+
+.lk{
+    margin-right: 50px;
+}
+
+span{
+    margin-left: 10px;
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+color: rgb(101, 98, 98);
+}
+
+.head{
+    color: white;
+}
+
+h1 {
+    font-weight: lighter;
+ margin-right: 700px;
+}
+
+#India{
+    width: 100px;
+}
+
+#opt1{
+    width: 1000px;
+    height: 60px;
+    font-size: larger;
+    margin-top: 20px;
+    padding-left: 10px;
+    margin-left: -50px;
+    border-radius: 5px;
+    border-color: gainsboro;
+}
+
+#last{
+    width: 100%;
+    height: 450px;
+    margin-top: 50px;
+    background-color: #eaeaea;
+    padding-top: 60px;
+    padding-left: 20px;
+    padding-right: 50px;
+    /* max-width: fit-content; */
+}
+
+.ph{
+    height: 28px;
+    width: 132px;
+}
+
+#Country{
+    height: 35px;
+    width: 100px;
+    padding-left: 30px;
+    border-radius: 5px;
+    margin-left: 700px;
+    font-size: large;
+    margin-right: 12px;
+    background-image: url(photos/india.png);
+    background-position: left;
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-image-width: 50px;
+}
+
+
+#Language{
+    height: 35px;
+    width: 120px;
+    border-radius: 5px;
+    padding-left: 32px;
+    font-size: large;
+    background-image: url(photos/globe.png);
+    background-position: left;
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-image-width: 50px;
+}
+
+li{
+    color: rgb(106, 105, 105);
+    list-style-type: none;
+    font-size: 15px;
+}
+
+.LISTS{
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 40px;
+    padding-left: 70px;
+    padding-right: 60px;
+    /* max-width: 200px; */
+}
+
+#l1{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    row-gap: 2px;
+}
+
+#l2{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    row-gap: 2px;
+}
+
+#l3{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    row-gap: 2px;
+}
+
+#l4{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    row-gap: 2px;
+}
+
+#l5{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    row-gap: 2px;
+}
+
+.b {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 5px;
+}
+
+.sidebar{
+    max-width: max-content;
+}
+
+.bn{
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    background-image: url(photos/lkn.png);
+    background-size: cover;
+    cursor: pointer;
+}
+
+.bn2{
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    background-image: url(photos/insta.png);
+    background-size: contain;
+    cursor: pointer;
+}
+
+.bn3{
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    background-image: url(photos/x.png);
+    background-size: contain;
+    cursor: pointer;
+}
+
+.bn4{
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    background-image: url(photos/fb.png);
+    background-size: contain;
+    cursor: pointer;
+}
+
+.bn5{
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    background-image: url(photos/youtbe.jpeg);
+    background-size: contain;
+    cursor: pointer;
+}
+
+.vb{
+    padding-top: 15px;
+}
+
+.rows{
+    display: flex;
+}
